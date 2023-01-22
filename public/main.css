@@ -1,0 +1,10 @@
+.card .img-fit {
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+.resize {
+    width: auto;
+    height: 120px;
+    margin-top: 12px;
+}

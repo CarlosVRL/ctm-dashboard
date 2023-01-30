@@ -47,30 +47,30 @@
             <img src="./assets/btc.png" class="card-image-top img-fit resize" alt="Bitcoin">
             <div class="card-body">
               <h5 class="card-tile text-center">CTM BTC 8 Hour</h5>
-              <p class="card-text text-center" style="padding-top: 8px;">
-                <i class="bi bi-circle-fill" style="color: #00FF00;"></i> <b>Long Trade Active</b>
+              <p class="card-text text-center" style="padding-top: 8px;" id="btc_status">
+                <!-- -->
               </p>
               <table class="table">
                 <tbody>
                   <tr>
                     <td><b>Entry</b></td>
-                    <td>21146.69</td>
+                    <td id="btc_entry"><!-- --></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><b>Stop</b></td>
-                    <td>20512.29</td>
-                    <td>(3.0%)</td>
+                    <td id="btc_stop_value"><!-- --></td>
+                    <td id="btc_stop_percent"><!-- --></td>
                   </tr>
                   <tr>
                     <td><b>Gain</b></td>
-                    <td>1753.11</td>
-                    <td>(8.3%)</td>
+                    <td id="btc_gain_value"></td>
+                    <td id="btc_gain_percent"></td>
                   </tr>
                   <tr>
                     <td><b>Long</b></td>
-                    <td>918.31</td>
-                    <td><i class="bi bi-x-octagon"></i></td>
+                    <td id="btc_long_value"></td>
+                    <td id="btc_long_filter"></td>
                   </tr>
                 </tbody>
               </table>
@@ -85,31 +85,31 @@
           <div class="card mx-auto" style="max-width: 400px;">
             <img src="./assets/eth.png" class="card-image-top img-fit resize" alt="Bitcoin">
             <div class="card-body">
-              <h5 class="card-tile text-center">CTM ETH 8 Hour</h5>
-              <p class="card-text text-center" style="padding-top: 8px;">
-                <i class="bi bi-circle-fill" style="color: #00FF00;"></i> <b>Long Trade Active</b>
+              <h5 class="card-tile text-center">CTM BTC 8 Hour</h5>
+              <p class="card-text text-center" style="padding-top: 8px;" id="eth_status">
+                <!-- -->
               </p>
               <table class="table">
                 <tbody>
                 <tr>
                   <td><b>Entry</b></td>
-                  <td>1251.80</td>
+                  <td id="eth_entry"><!-- --></td>
                   <td></td>
                 </tr>
                 <tr>
                   <td><b>Stop</b></td>
-                  <td>1101.58</td>
-                  <td>(12.0%)</td>
+                  <td id="eth_stop_value"><!-- --></td>
+                  <td id="eth_stop_percent"><!-- --></td>
                 </tr>
                 <tr>
                   <td><b>Gain</b></td>
-                  <td>375.77</td>
-                  <td>(30.0%)</td>
+                  <td id="eth_gain_value"></td>
+                  <td id="eth_gain_percent"></td>
                 </tr>
                 <tr>
                   <td><b>Long</b></td>
-                  <td>176.32</td>
-                  <td><i class="bi bi-x-octagon"></i></td>
+                  <td id="eth_long_value"></td>
+                  <td id="eth_long_filter"></td>
                 </tr>
                 </tbody>
               </table>
@@ -124,31 +124,31 @@
           <div class="card mx-auto" style="max-width: 400px;">
             <img src="./assets/ada.png" class="card-image-top img-fit resize" alt="Bitcoin">
             <div class="card-body">
-              <h5 class="card-tile text-center">CTM ADA 8 Hour</h5>
-              <p class="card-text text-center" style="padding-top: 8px;">
-                <i class="bi bi-circle-fill" style="color: #00FF00;"></i> <b>Long Trade Active</b>
+              <h5 class="card-tile text-center">CTM BTC 8 Hour</h5>
+              <p class="card-text text-center" style="padding-top: 8px;" id="ada_status">
+                <!-- -->
               </p>
               <table class="table">
                 <tbody>
                 <tr>
                   <td><b>Entry</b></td>
-                  <td>0.37</td>
+                  <td id="ada_entry"><!-- --></td>
                   <td></td>
                 </tr>
                 <tr>
                   <td><b>Stop</b></td>
-                  <td>0.29</td>
-                  <td>(20.0%)</td>
+                  <td id="ada_stop_value"><!-- --></td>
+                  <td id="ada_stop_percent"><!-- --></td>
                 </tr>
                 <tr>
                   <td><b>Gain</b></td>
-                  <td>0.01</td>
-                  <td>(1.9%)</td>
+                  <td id="ada_gain_value"></td>
+                  <td id="ada_gain_percent"></td>
                 </tr>
                 <tr>
                   <td><b>Long</b></td>
-                  <td>0.01</td>
-                  <td><i class="bi bi-x-octagon"></i></td>
+                  <td id="ada_long_value"></td>
+                  <td id="ada_long_filter"></td>
                 </tr>
                 </tbody>
               </table>
@@ -164,7 +164,7 @@
     <div class="container my-5">
       <footer class="text-center text-lg-start bg-light" style="background-color: #929fba">
         <div class="text-center p-3">
-          <b>Last Updated</b>: Sun 22 Jan '23 00:00
+          <b>Last Updated</b>: <span id="last_updated"></span>
         </div>
       </footer>
     </div>

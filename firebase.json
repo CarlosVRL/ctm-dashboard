@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "ctm-dashboard/build",
     "ignore": [
       "firebase.json",
       "**/.*",
